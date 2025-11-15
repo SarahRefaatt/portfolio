@@ -368,7 +368,7 @@ export default function Home() {
             Whether you need a custom web application, AI solution, or technical guidance,
             I'm here to help bring your vision to life with clean code and exceptional design.
           </p>
-          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
               Start a Project
               <span>→</span>
@@ -376,44 +376,8 @@ export default function Home() {
             <button className="bg-white text-zinc-900 px-8 py-3 rounded-lg font-medium hover:bg-zinc-100 transition-colors">
               Schedule Consultation
             </button>
-          </div> */}
-          <form 
-  action="https://api.web3forms.com/submit"
-  method="POST"
-  className="flex flex-col gap-4 max-w-lg mx-auto"
->
-  {/* Your Web3Forms Access Key */}
-  {/* <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> */}
+          </div>
 
-  <input 
-    type="email"
-    name="email"
-    required
-    placeholder="Your Email"
-    className="px-4 py-3 rounded-lg border border-zinc-300 focus:ring-2 focus:ring-blue-500 outline-none"
-  />
-
-  <textarea
-    name="project"
-    required
-    placeholder="Describe your project..."
-    className="px-4 py-3 rounded-lg border border-zinc-300 h-32 focus:ring-2 focus:ring-blue-500 outline-none"
-  ></textarea>
-
-  <button 
-    type="submit"
-    className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
-  >
-    Start a Project →
-  </button>
-
-  <button 
-    type="submit"
-    className="bg-white text-zinc-900 px-8 py-3 rounded-lg font-medium hover:bg-zinc-100 transition-colors border border-zinc-300"
-  >
-    Schedule Consultation
-  </button>
-</form>
 
         </div>
       </section>
