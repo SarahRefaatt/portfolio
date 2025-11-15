@@ -383,7 +383,7 @@ export default function Home() {
   className="flex flex-col gap-4 max-w-lg mx-auto"
 >
   {/* Your Web3Forms Access Key */}
-  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+  {/* <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> */}
 
   <input 
     type="email"
