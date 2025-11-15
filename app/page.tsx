@@ -394,9 +394,9 @@ export default function Home() {
               <Link href="https://github.com/SarahRefaatt" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">
                 GitHub
               </Link>
-              <Link href="sarah.mahmoudd24@gmail.com" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">
+              {/* <Link href="sarah.mahmoudd24@gmail.com" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">
                 Email
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
