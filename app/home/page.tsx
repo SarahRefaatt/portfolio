@@ -1,4 +1,5 @@
 "use client"
+import { link } from "fs";
 import Link from "next/link";
 
 export default function Home() {
@@ -9,15 +10,18 @@ export default function Home() {
       description: "Modern online store ",
       type: "Website",
       image: "/api/placeholder/400/300",
-      tech: ["Next.js", "Node.js", "SQL"]
+      tech: ["Next.js", "Node.js", "SQL"],
+            link  :"https://chat-bot-tau-eight.vercel.app/"
+
     },
     {
       id: 2,
       title: "Customer Support Chatbot",
       description: "AI chatbot handling 10,000+ monthly inquiries",
       type: "Chatbot",
-      image: "/api/placeholder/400/300",
-      tech: ["Python", "TensorFlow", "React"]
+      image: "/chatbot.png",
+      tech: ["Python", "TensorFlow", "React"],
+            link  :"https://chat-bot-tau-eight.vercel.app/"
     },
     {
       id: 3,
@@ -25,7 +29,9 @@ export default function Home() {
       description: "Secure patient management system with real-time chat",
       type: "Website + Chatbot",
       image: "/api/placeholder/400/300",
-      tech: ["TypeScript", "Firebase", "WebRTC"]
+      tech: ["TypeScript", "Firebase", "WebRTC"],
+            link  :"https://chat-bot-tau-eight.vercel.app/"
+
     }
   ];
 
@@ -313,7 +319,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <div
+              <Link href={project.link} target="_blank" rel="noopener noreferrer">
+
+                <div
                 key={project.id}
                 className="bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden shadow-sm border border-zinc-200 dark:border-zinc-800 hover:shadow-xl transition-all duration-300 group"
               >
@@ -352,7 +360,9 @@ export default function Home() {
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </button>
                 </div>
-              </div>
+              </div> 
+              </Link>
+             
             ))}
           </div>
         </div>
